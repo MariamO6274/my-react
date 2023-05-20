@@ -1,23 +1,20 @@
 import React from "react";
 // import TodoList from "./TodoList";
 import Card from "./Card";
-// import "./Style.css";
-import "./App.css";
+import "./Style.css";
+// import "./App.css";
 // import siri_logo from "./images/siri_logo.png";
-// import alexa_logo from "./images/alexa_logo.png";
+import alexa_logo from "./images/alexa_logo.png";
 // import cortana_logo from "./images/cortana_logo.png";
 
 function App() {
-  //show another component
-  //
   return (
     <div className="cards">
       <Card
         title="Alexa"
         user="@alexa99"
         description="I'll help you buy stuff off Amazon"
-        imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkPHKR3nF8XyBfYCf6RfGp2itFb2Xp69icw&usqp=CAU"
-      />
+        imageUrl={alexa_logo}/>
       <Card
         title="Cortana"
         user="@cortana12"

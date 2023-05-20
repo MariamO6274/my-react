@@ -1,8 +1,9 @@
 import React from "react";
 
-const RestaurantCard = ({ title, user, description, imageUrl }) => {
+//props goes as a RestaurantCard = (props) =>  or RestaurantCard = ({title, user, description, imageUrl} ) => 
+const RestaurantCard = (props) => {
   // console.log(props);
-  // const {title, user, description, imageUrl} = props;
+  const {title, user, description, imageUrl} = props;
 
   return (
     <div className="container">
