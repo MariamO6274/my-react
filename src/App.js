@@ -11,33 +11,33 @@ function App() {
   //show another component
   //
   return (
-    <>
-      <div className="cards">
-        <Card
-          description="KFC description"
-          title="KFC"
-          imageUrl="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT89.jpg?ver=29.13"
-        />
-        <Card
-          title="McDonalds"
-          description="McDonalds description"
-          imageUrl="https://www.shutterstock.com/image-photo/ayutthayathailand-march-7-2018-view-260nw-1181606473.jpg"
-        />
-        <Card
-          title="SubWay"
-          description="SubWay description"
-          imageUrl="https://i.pinimg.com/originals/4b/eb/2a/4beb2a37a5810f9eacc37e3c6234889c.png"
-        />
-      </div>
-    </>
+    <div className="cards">
+      <Card
+        title="Alexa"
+        user="@alexa99"
+        description="I'll help you buy stuff off Amazon"
+        imageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHkPHKR3nF8XyBfYCf6RfGp2itFb2Xp69icw&usqp=CAU"
+      />
+      <Card
+        title="Cortana"
+        user="@cortana12"
+        description="Personal assistant by Microsoft"
+        imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Microsoft_Cortana_transparent.svg/1200px-Microsoft_Cortana_transparent.svg.png"
+      />
+      <Card
+        title="Siri"
+        user="@siri44"
+        description="I don't get a lot of updates anymore"
+        imageUrl="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/homepod/ios14-siri-icon.png"
+      />
+    </div>
   );
 }
 
 export default App;
 // div className ="cardDisplay"
 
-
-  //  <TodoList />
-  //     <input type="text" />
-  //     <button> Add Tesk</button>
-  //     <div> 0 tesks left to do</div>
+//  <TodoList />
+//     <input type="text" />
+//     <button> Add Tesk</button>
+//     <div> 0 tesks left to do</div>
