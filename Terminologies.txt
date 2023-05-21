@@ -1,0 +1,23 @@
+
+Options 1: React developer
+    Google, fixing some bugs and introducing another bug
+
+Web developer who understands React
+
+
+Unidirectional flow in React
+
+Data can flow from Parent component to child component.
+This flow is done by 'props' 
+Props are used to pass data from parent to child
+
+What if I want to pass data from child to parent?
+
+
+
+One way data binding in React.
+2 options: 
+ - View to model
+ - Model to View
+
+Why we use React Fragments
