@@ -6,6 +6,7 @@ import siri_logo from "./images/siri_logo.png";
 import alexa_logo from "./images/alexa_logo.png";
 import cortana_logo from "./images/cortana_logo.png";
 import PluseMinus from "./PluseMinusButton";
+import ColorCard from "./ColorCard";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         />
       </div>
       <PluseMinus />
+      <ColorCard />
     </>
   );
 }
