@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 var ColorCard = () => {
-  var [showColor, setShowColor] = useState("");
+  var [showColor, setShowColor] = useState("red");
 
   return (
     <>
-      <div>
-        <p>Choose your color {showColor}</p>
-        <button onClick={() => setShowColor}>Color Button</button>
+      <div className="buttonContainer">
+        <p>Coosen color {showColor}</p>
+        <button onClick={() => setShowColor("green")}>Color Button</button>
       </div>
     </>
   );
