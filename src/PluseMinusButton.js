@@ -7,21 +7,21 @@ var PluseMinus = () => {
     //1.current state at every single iteration of our render function here and
     //2.function that allows you to update that current state
   
-  function decrementCount() {
+  function minuse() {
     setCount(count - 1)
   }
   //we can now update our count by decreasing it by 1 
   //and everytime we call this set count (our update function) 
   //it's going to re-render our component with the new value for our count
-  function incrementCount() {
+  function plus() {
     setCount(count + 1);
   }
     return (
       <>
         <div className="buttonContainer">
-          <button onClick={decrementCount}>Minus</button>
+          <button onClick={minuse}>Minus</button>
           <span>{count}</span>
-          <button onClick={incrementCount}>Plus</button>
+          <button onClick={plus}>Plus</button>
         </div>
       </>
     );
