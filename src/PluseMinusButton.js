@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+// import { useState } from "react";
 
 var PluseMinus = () => {
 
     var [count, setCount] = useState(10) //default state (let's say our counter will start at 10)
-    //1.current state at every single iteration of our render function here and 2.function that allows you to update that current state
+    //1.current state at every single iteration of our render function here and
+    //2.function that allows you to update that current state
   
   function decrementCount() {
     setCount(count - 1)
@@ -16,9 +18,11 @@ var PluseMinus = () => {
   }
     return (
       <>
-        <button onClick={decrementCount}>Minus</button>
-        <span>{count}</span>
-        <button onClick={incrementCount}>Plus</button>
+        <div className="buttonContainer">
+          <button onClick={decrementCount}>Minus</button>
+          <span>{count}</span>
+          <button onClick={incrementCount}>Plus</button>
+        </div>
       </>
     );
 };
