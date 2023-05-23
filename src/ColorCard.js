@@ -5,7 +5,7 @@ var ColorCard = () => {
 
   return (
     <>
-      <div className="buttonContainer">
+      <div>
         <p>Choose your color {showColor}</p>
         <button onClick={() => setShowColor}>Color Button</button>
       </div>
