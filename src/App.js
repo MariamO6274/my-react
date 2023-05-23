@@ -6,7 +6,6 @@ import alexa_logo from "./images/alexa_logo.png";
 import cortana_logo from "./images/cortana_logo.png";
 import PluseMinus from "./PluseMinusButton";
 import ColorCard from "./ColorCard";
-import RandomGenerator from "./RandomGenerator";
 
 function App() {
   return (
@@ -33,7 +32,6 @@ function App() {
       </div>
       <PluseMinus />
       <ColorCard />
-      <RandomGenerator/>
     </>
   );
 }
