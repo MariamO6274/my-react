@@ -1,7 +1,7 @@
 import React from "react";
 
-//props goes as a RestaurantCard = (props) =>  or RestaurantCard = ({title, user, description, imageUrl} ) => 
-const RestaurantCard = (props) => {
+//props goes as a Card = (props) =>  or Card = ({title, user, description, imageUrl} ) => 
+const Card = (props) => {
   // console.log(props);
   const {title, user, description, imageUrl} = props;
 
@@ -18,4 +18,4 @@ const RestaurantCard = (props) => {
   );
 };
 
-export default RestaurantCard;
+export default Card;

@@ -1,5 +1,4 @@
 import React from "react";
-// import TodoList from "./TodoList";
 import Card from "./Card";
 import "./Style.css";
 import siri_logo from "./images/siri_logo.png";

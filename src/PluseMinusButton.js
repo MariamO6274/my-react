@@ -29,7 +29,12 @@ var PluseMinus = () => {
 
 export default PluseMinus;
 
+// If we want the component to re-render itself based on change in some variable (in this case: 'count').
+ // Then we need to make that variable a 'state' and then update that state through function.
+ // This will help React to understand that you would like to re-render the component.
 
+
+ 
 
 //when you update the state your component re renders
 
