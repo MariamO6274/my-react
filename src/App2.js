@@ -5,15 +5,15 @@ import "./App.css";
 
 const imageArr = ["tester1", "tester2", "tester3", "tester4"];
 
-//get a random index
-var randomPhotoIndex = Math.floor(Math.random() * imageArr.length);
+// //get a random index
+// var randomPhotoIndex = Math.floor(Math.random() * imageArr.length);
 
-//get an image at the randomPhotoIndex
-var selectedPhoto = imageArr[randomPhotoIndex];
+// //get an image at the randomPhotoIndex
+// var selectedPhoto = imageArr[randomPhotoIndex];
 
-// var randomPhotoIndex = Math.floor();
-// var myRange = randomPhotoIndex * imageArr.length;
-// var myIndex = Math.floor(myRange)
+var randomPhotoIndex = Math.floor();
+var myRange = randomPhotoIndex * imageArr.length;
+var myIndex = Math.floor(myRange)
 
 function App2() {
   var counter = 0;
@@ -23,9 +23,9 @@ function App2() {
   var imageList = [];
 
   for (let i = 0; i < imageCount; i++) {
-    console.log(imageArr[selectedPhoto]);
+    console.log(imageArr[myIndex]);
 
-    imageList.push(<RandomGenerator type={imageArr[selectedPhoto]} />);
+    imageList.push(<RandomGenerator type={imageArr[myIndex]} />);
   }
 //   type={imageArr[selectedPhoto]} wrong!!
 

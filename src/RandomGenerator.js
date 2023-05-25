@@ -9,12 +9,14 @@ const testerImages = {
   "tester2": tester2,
   "tester3": tester3,
   "tester4": tester4
+  
 };
+console.log(tester4)
 
-const RandomGenerator = ({ type }) => {
+const RandomGenerator = ({type}) => {
   return (
     <div className="mainContainer">
-      <img src={testerImages[type]}></img>
+      <img src={testerImages[type]} alt={""}></img>
     </div>
   );
 };
