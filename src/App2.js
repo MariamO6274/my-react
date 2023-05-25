@@ -23,8 +23,11 @@ function App2() {
   var imageList = [];
 
   for (let i = 0; i < imageCount; i++) {
+    console.log(imageArr[selectedPhoto]);
+
     imageList.push(<RandomGenerator type={imageArr[selectedPhoto]} />);
   }
+//   type={imageArr[selectedPhoto]} wrong!!
 
   function getMoreImages() {
     counter += 1;
@@ -36,9 +39,7 @@ function App2() {
       <button className="randomButton" onClick={getMoreImages}>
         Random Image
       </button>
-
       <RandomGenerator />
-      <br></br>
       {imageList}
     </>
   );
