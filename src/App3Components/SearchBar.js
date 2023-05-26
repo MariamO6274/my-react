@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Style.css";
 
 const SearchBar = ({str1, cb }) => {
   // Step 1: Creat a state
@@ -17,9 +18,15 @@ const SearchBar = ({str1, cb }) => {
   // Step 2: Create event handeler..onChange pass ref  of our function (to call back)
   // Step 5: Use value prop, value would be always update to the latest
   return (
-    <div>
-      <input value={searchTerm} onChange={handleChange}></input>
-      <button onClick={handleClick}>Search</button>
+    <div className="inputBox">
+      <input
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={handleChange}
+      ></input>
+      <button className="button" onClick={handleClick}>
+        Search
+      </button>
     </div>
   );
 };
