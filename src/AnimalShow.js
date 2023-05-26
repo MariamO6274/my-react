@@ -5,6 +5,8 @@ import dog from "./svg/dog.svg";
 import gator from "./svg/gator.svg";
 import heart from "./svg/heart.svg";
 import horse from "./svg/horse.svg";
+import tester1 from "./images/tester1.jpg";
+import tester2 from "./images/tester2.jpg";
 
 const svgMap = {
   bird: bird,
@@ -13,20 +15,23 @@ const svgMap = {
   gator: gator,
   heart: heart,
   horse: horse,
+  tester1: tester1,
+  tester2: tester2,
 };
 
-const AnimalShow = ({ type }) => {
+const AnimalShow = ({type}) => {
   const [clicks, setClicks] = useState(0);
 
   function handleClick() {
     setClicks(clicks + 1);
   }
-
+  //To increase the size on every click, we will have to control the sty;ing of heart based on click value.
+  
   return (
     <div onClick={handleClick}>
-      <img alt="animal" style={{ width: "100px" }} src={svgMap[type]}></img>
+      <img alt="animal" src={svgMap[type]}></img>
       <img
-        alt="heartimg"
+        alt="heart"
         style={{ width: 10 + 10 * clicks + "px" }}
         src={svgMap["heart"]}
       ></img>

@@ -86,4 +86,9 @@ function App2() {
 }
 
 export default App2;
+
+
+
+style={{ display: "flex", "flex-wrap": "wrap" }} sigrdzeze rom ar chamoceros
  */
+

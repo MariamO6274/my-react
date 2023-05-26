@@ -4,11 +4,6 @@ import AnimalShow from "./AnimalShow";
 import "./App.css";
 
 
-// Normal JS code can be written here
-
-// If we want the component to re-render itself based on change in some variable (in this case: 'count').
-// Then we need to make that variable a 'state' and then update that state through function.
-// This will help React to understand that you would like to re-render the component.
 
 function getRandomAnimal() {
   var animals = ["horse", "cat", "dog", "gator", "bird"];
@@ -20,23 +15,24 @@ function getRandomAnimal() {
 }
 
 var App2 = () => {
-  // Create an animal array state
-  const [animalsList, setAnimal] = useState([]);
+  const [animalsList, setAnimal] = useState([]); // animal array state
 
-  function addAnimal() {
-    // When we add animal, we will update state
+  function handleClick() {
+    console.log("Button clicked....");
     setAnimal([...animalsList, getRandomAnimal()]);
     console.log(animalsList);
   }
+  // we do not do animals.push because it modifies a piece of state
 
   var animalsToRender = animalsList.map((animal) => {
     return <AnimalShow type={animal} />;
   });
+  //Map function will iterate through every animal and create a array of component list
 
   return (
     <>
-      <button onClick={addAnimal}>Add Animal</button>
-      <div style={{ display: "flex", "flex-wrap": "wrap" }}>
+      <button onClick={handleClick}>Add Animal</button>
+      <div >
         {animalsToRender}
       </div>
     </>
