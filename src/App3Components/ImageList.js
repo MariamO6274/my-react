@@ -5,8 +5,7 @@ const ImageList = ({ images }) => {
   return (
     <div>
       <ImageShow />
-      <ImageShow />
-      <ImageShow />
+      
     </div>
   );
 };
