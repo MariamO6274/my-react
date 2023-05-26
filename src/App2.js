@@ -1,9 +1,10 @@
 import React from "react";
 import RandomGenerator from "./RandomGenerator";
 import { useState } from "react";
-import "./App.css";
+// import "./App.css";
 
-const imageArr = ["tester1", "tester2", "tester3", "tester4"];
+const imageArr = ["bird", "cat", "dog", "gator", "heart", "horse"];
+
 
 // //get a random index
 // var randomPhotoIndex = Math.floor(Math.random() * imageArr.length);
@@ -23,9 +24,9 @@ function App2() {
   var imageList = [];
 
   for (let i = 0; i < imageCount; i++) {
-    console.log(imageArr[myIndex]);
+    // console.log(imageArr[myIndex]);
 
-    imageList.push(<RandomGenerator type={imageArr[myIndex]} />);
+    imageList.push(<RandomGenerator type={imageArr[myIndex]} key={i}/>);
   }
 //   type={imageArr[selectedPhoto]} wrong!!
 
@@ -36,6 +37,7 @@ function App2() {
 
   return (
     <>
+      {imageCount}
       <button className="randomButton" onClick={getMoreImages}>
         Random Image
       </button>
