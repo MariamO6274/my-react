@@ -18,16 +18,19 @@ const SearchBar = ({str1, cb }) => {
   // Step 2: Create event handeler..onChange pass ref  of our function (to call back)
   // Step 5: Use value prop, value would be always update to the latest
   return (
-    <div className="inputBox">
-      <input
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={handleChange}
-      ></input>
-      <button className="button" onClick={handleClick}>
-        Search
-      </button>
-    </div>
+    <>
+      <h3 style={{ color: "white", marginBottom: "20px"}}>Search Term</h3>
+      <div className="inputBox">
+        <input
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={handleChange}
+        ></input>
+        <button className="button" onClick={handleClick}>
+          Search
+        </button>
+      </div>
+    </>
   );
 };
 
