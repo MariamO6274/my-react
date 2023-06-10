@@ -21,3 +21,6 @@ One way data binding in React.
  - Model to View
 
 Why we use React Fragments
+
+
+single page application-when u say page it means HTML file (no multipale HTML files in project)
