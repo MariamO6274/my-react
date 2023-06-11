@@ -5,8 +5,6 @@ import dog from "./svg/dog.svg";
 import gator from "./svg/gator.svg";
 import heart from "./svg/heart.svg";
 import horse from "./svg/horse.svg";
-import tester1 from "./images/tester1.jpg";
-import tester2 from "./images/tester2.jpg";
 
 const svgMap = {
   bird: bird,
@@ -15,8 +13,6 @@ const svgMap = {
   gator: gator,
   heart: heart,
   horse: horse,
-  tester1: tester1,
-  tester2: tester2,
 };
 
 const AnimalShow = ({type}) => {
