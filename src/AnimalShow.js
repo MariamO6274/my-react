@@ -21,7 +21,7 @@ const AnimalShow = ({type}) => {
   function handleClick() {
     setClicks(clicks + 1);
   }
-  //To increase the size on every click, we will have to control the sty;ing of heart based on click value.
+  //To increase the size on every click, we will have to control the styling of heart based on click value.
   
   return (
     <div onClick={handleClick}>
