@@ -35,3 +35,15 @@ const AnimalShow = ({type}) => {
 export {App3}
 
 same??
+
+--------------------------------------------------------------------------------
+React interview questions
+
+1. How to pass information parent component to child component/ child to pareent
+2. What is componintaaiztion-meaning react is based on componenet theory, using them combining them, 
+that is componintazation, everything is component in react, components help you to reuse your code efficiently.
+3. What is useState?
+4. Create counter application, where you have increamnet and decrimeant button,
+and you increamnet and decreament based on button click.
+5. Make use of useRef-change the color of this/that..
+6. useEffect to handle API respose and show that response here.
