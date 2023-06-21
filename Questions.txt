@@ -47,3 +47,4 @@ that is componintazation, everything is component in react, components help you 
 and you increamnet and decreament based on button click.
 5. Make use of useRef-change the color of this/that..
 6. useEffect to handle API respose and show that response here.
+7. What are pure componenet?-no expect multipal 
