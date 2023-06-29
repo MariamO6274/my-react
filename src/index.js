@@ -9,6 +9,7 @@ import ReactDOM from "react-dom/client";
 // // import  BookApp from "./BookApp";
 // import AppReducer from "./useReducerApp/AppReducer"
 import ClassBasedComponent from "./ClassBasedComponent";
+import PokemonApp from "./PokemonApp";
 
 
 
@@ -21,4 +22,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<BookApp />);
 // root.render(<AppReducer />);
 
-root.render(<ClassBasedComponent name="Tom" lastName="Hank" />);
+//root.render(<ClassBasedComponent name="Tom" lastName="Hank" />);
+
+
+root.render(<PokemonApp />);
