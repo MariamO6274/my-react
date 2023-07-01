@@ -16,6 +16,11 @@ function PokemonApp() {
     });
   }, [counter]);
 
+  //conditional rendering, if we put axiso in setTimout we'll see loading after time
+  // untill my data is undefind show loading..
+  if (data === undefined) return <>Loading . . .</>
+  
+
   return (
     <div>
       <button
@@ -32,6 +37,9 @@ function PokemonApp() {
       <br />
       <h4>Pocamon name is </h4>
       {data.name}
+      <br/>
+      Weight is: {data.weight}
+      <img src={data.sprites.front_default}/>
       <PokemonInfo />
     </div>
   );
@@ -42,3 +50,4 @@ export default PokemonApp;
 // if we don't want to use async/await we can youc promises
 // evrytime we use axios or fetch api we should never use without protection
 // we have to incapsulated in useEffect
+
