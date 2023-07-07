@@ -8,8 +8,9 @@ import ReactDOM from "react-dom/client";
 // import { App3 } from "./App3";
 // // import  BookApp from "./BookApp";
 // import AppReducer from "./useReducerApp/AppReducer"
-import ClassBasedComponent from "./ClassBasedComponent";
-import PokemonApp from "./PokemonApp";
+// import ClassBasedComponent from "./ClassBasedComponent";
+// import PokemonApp from "./PokemonApp";
+import CakeIceCreamApp from "./CakeIceCreamApp";
 
 
 
@@ -25,4 +26,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //root.render(<ClassBasedComponent name="Tom" lastName="Hank" />);
 
 
-root.render(<PokemonApp />);
+// root.render(<PokemonApp />);
+ root.render(<CakeIceCreamApp />);
