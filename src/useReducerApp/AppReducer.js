@@ -75,6 +75,7 @@ function AppReducer() {
     // }
     dispatch({
       type: "add",
+      // payload:
     });
   };
   return (
