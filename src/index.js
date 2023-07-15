@@ -7,10 +7,11 @@ import ReactDOM from "react-dom/client";
 // import App2 from "./App2";
 // import { App3 } from "./App3";
 // // import  BookApp from "./BookApp";
- import AppReducer from "./useReducerApp/AppReducer"
+// import AppReducer from "./useReducerApp/AppReducer"
 // import ClassBasedComponent from "./ClassBasedComponent";
 // import PokemonApp from "./PokemonApp";
 // import CakeIceCreamApp from "./CakeIceCreamApp";
+import FakeStoreApiApp from "./FakeStoreApiApp";
 
 
 
@@ -27,4 +28,4 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 
 // root.render(<PokemonApp />);
- root.render(<AppReducer />);
+ root.render(<FakeStoreApiApp />);
