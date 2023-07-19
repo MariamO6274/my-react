@@ -3,6 +3,8 @@ import React from "react";
 function ProductCard(props) {
   const products = props.productData;
 
+  // also can co with{ productData } directly, const ProductsCards = ({ productData })
+
   return (
     <>
       <div className="container">
