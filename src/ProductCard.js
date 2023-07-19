@@ -1,34 +1,29 @@
-import React from 'react'
-
-
+import React from "react";
 
 function ProductCard(props) {
-
   const products = props.productData;
 
-   return (
-     <>
-       <div className="container">
-         {products.map((product) => {
-           return (
-             <>
-               <div className="cards">
-                 <div className="card-content">
-                   <img src={product.image} />
-                   <h3>{product.title}</h3>
-                   <h4>$ {product.price}</h4>
-                   <hr />
-                   <p>{product.description}</p>
-                 </div>
-                 <button>Buy</button>
-               </div>
-             </>
-           );
-         })}
-       </div>
-     </>
-   );
+  return (
+    <>
+      <div className="container">
+        {products.map((product) => {
+          return (
+            <>
+              <div className="cards">
+                <div className="card-content" key={product.id}>
+                  <img src={product.image} />
+                  <h3>{product.title}</h3>
+                  <h4>$ {product.price}</h4>
+                  <hr />
+                  <p>{product.description}</p>
+                </div>
+              </div>
+            </>
+          );
+        })}
+      </div>
+    </>
+  );
 }
 
-export default ProductCard
-
+export default ProductCard;
